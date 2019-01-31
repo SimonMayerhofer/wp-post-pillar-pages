@@ -110,7 +110,7 @@ final class SettingsPage {
 	public function print_section_info() {
 		?>
 		<p>Enter all IDs from posts which should be used as pillar pages. Separate them by commas. e.g. <code>1, 32, 3432, 57</code>.</p>
-		<p><span style="color: #f00;">WARNING: </span> If you add (or remove) IDs here or you change the permalink of a post you added here, you need to <strong>save your permalinks</strong> again.<br>This is necessary to display the posts of the pillar pages later on.</p>
+		<p><strong>Notice:</strong> If you add (or remove) IDs here or you change the permalink of a post you added here, you need to <strong>save your permalinks</strong> again.<br>This is necessary to display the posts of the pillar pages later on.</p>
 		<p><a href="<?php echo esc_url( admin_url( 'options-permalink.php' ) ); ?>">Go to permalink options page</a></p>
 		<p><strong style="color: #f00;">IF YOU DELETE A PILLAR PAGE YOU CAN'T RESTORE IT.</strong><br>If you remove it from the following field, you can add simply add it again. But if you delete it from WordPress 'move it to trash' it's gone.<br>You can only add it back if you manually add the Custom Post Type inside a plugin or theme again.</p>
 		<?php
