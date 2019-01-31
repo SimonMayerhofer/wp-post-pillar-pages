@@ -143,7 +143,7 @@ final class PillarPages {
 		$slugs = [];
 
 		foreach ( $pillar_pages as $page ) {
-			$slugs[] = $page->post_name;
+			$slugs[] = 'pillar-page-' . $page->ID;
 		}
 
 		if ( $query->is_home() && $query->is_main_query() ) {
