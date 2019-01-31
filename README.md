@@ -1,5 +1,7 @@
 # WordPress Post Pillar Pages
 
+[![Github Releases](https://img.shields.io/github/release/SimonMayerhofer/wp-post-pillar-pages.svg)](https://github.com/SimonMayerhofer/wp-post-pillar-pages/releases)
+
 Post Pillar Pages is a WordPress plugin to help you creating pillar pages for your SEO strategy. As posts in WordPress are not hierarchical you would have to use a page to create a pillar page. This would force you to use pages also for your topic clusters if you want to have your pillar page permalink inside your URL. With this plugin you can specify posts and pages to use as pillar pages. For every post or page ID specified a [Custom Post Type](https://codex.wordpress.org/Post_Types) is created.
 
 ## What is a pillar page?
