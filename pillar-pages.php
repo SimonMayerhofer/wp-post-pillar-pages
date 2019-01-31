@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Post Pillar Pages
  * Description: Use posts as pillar pages and create a Custom Post Type for every pillar page.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Simon Mayerhofer
  * Author URI:  https://mayerhofer.it
  * Plugin URI:  https://github.com/SimonMayerhofer/wp-post-pillar-pages/
