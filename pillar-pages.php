@@ -119,6 +119,7 @@ final class PillarPages {
 						'custom-fields',
 						'revisions',
 						'post-formats',
+						'comments',
 					],
 					'taxonomies'   => [
 						'category',
