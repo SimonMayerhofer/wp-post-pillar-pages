@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Post Pillar Pages
  * Description: Use posts as pillar pages and create a Custom Post Type for every pillar page.
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Simon Mayerhofer
  * Author URI:  https://mayerhofer.it
  * Plugin URI:  https://github.com/SimonMayerhofer/wp-post-pillar-pages/
@@ -76,16 +76,22 @@ final class PillarPages {
 	 * Get all pillar pages.
 	 */
 	private function get_pillar_pages() {
-		$post_ids = explode( ',', get_option( 'pillar_pages' )['post_ids'] );
+		$pillar_pages_option = get_option('pillar_pages');
+
+		if (!$pillar_pages_option || !isset($pillar_pages_option['post_ids'])) {
+			return []; // Return an empty array or handle the error in an appropriate way.
+		}
+
+		$post_ids = explode(',', $pillar_pages_option['post_ids']);
 		$pillar_pages = [];
 
-		foreach ( $post_ids as $id ) {
-			// skip if post with id not exists.
-			if ( false === get_post_status( $id ) ) {
+		foreach ($post_ids as $id) {
+			// skip if post with id does not exist.
+			if (false === get_post_status($id)) {
 				continue;
 			}
 
-			$pillar_pages[] = get_post( $id );
+			$pillar_pages[] = get_post($id);
 		}
 
 		return $pillar_pages;
